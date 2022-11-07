@@ -19,14 +19,30 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
-li{
-    list-style-type: none;
-    display: inline;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
+.btn:hover{
+    background-color: #00FF00;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+}
+
+.btn:active{
+    background-color: #00FF00;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.btn:focus{
+    background-color: #00FF00;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 122, 10);
 }
 
 
