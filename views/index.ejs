@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tennis Player Pokedox</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Update The Global Tennis Player Pokedox. This is an open source and community delegated database!</h1>
+  <div class="row">
+
+    <form action="/saveTennisInfo" method="post">
+        <div class="form-group">
+            <label>Player Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+            <label>Country of Player</label>
+            <input type="text" class="form-control" name="country">
+        </div>
+        <div class="form-group">
+            <label>Highest Career Rank</label>
+            <input type="text" class="form-control" name="rankhigh">
+        </div>
+        <div class="form-group">
+            <label>Number of Career Grand Slams</label>
+            <input type="text" class="form-control" name="numberGrandSlam">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+    </form>
+
+  <ul class="tennis">
+  <% for(var i=0; i<tennisPokedox.length; i++) {%>
+    <li class="tennisArray">
+      <span><%= tennisPokedox[i].playerName %></span>...
+      <span><%= tennisPokedox[i].playerCountry %></span>...
+      <span><%= tennisPokedox[i].highestRank %></span> (Highest Rank)...
+      <span><%= tennisPokedox[i].numberGrandSlam %></span>(Number of Grand Slams)...
+      <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
+
+
+
+
