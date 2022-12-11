@@ -6,7 +6,7 @@ const MongoClient = require("mongodb").MongoClient;
 var db, collection;
 const dbName = "tennisWiki";
 const url =
-  `mongodb+srv://abdullahidev:Github12@cluster0.rasf3io.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+  `mongodb+srv://abdullahidev:Github2035@cluster0.rasf3io.mongodb.net/tennisWiki?retryWrites=true&w=majority`;
 
 app.listen(5000, () => {
   MongoClient.connect(
